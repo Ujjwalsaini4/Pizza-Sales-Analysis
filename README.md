@@ -27,41 +27,41 @@ The following Entity Relationship Diagram (ERD) illustrates the database structu
 ### orders
 Stores information about customer orders.
 
-                                                            | Column | Description |
-                                                            |----------|-------------|
-                                                            | order_id | Unique order identifier |
-                                                            | date | Order date |
-                                                            | time | Order time |
-                                                            
-                                                            ### order_details
-                                                            Stores details of pizzas included in each order.
-                                                            
-                                                            | Column | Description |
-                                                            |----------|-------------|
-                                                            | order_details_id | Unique record identifier |
-                                                            | order_id | References orders table |
-                                                            | pizza_id | References pizza table |
-                                                            | quantity | Number of pizzas ordered |
-                                                            
-                                                            ### pizza
-                                                            Contains pizza size and pricing information.
-                                                            
-                                                            | Column | Description |
-                                                            |----------|-------------|
-                                                            | pizza_id | Unique pizza identifier |
-                                                            | pizza_type_id | References pizza_types table |
-                                                            | size | Pizza size |
-                                                            | price | Pizza price |
-                                                            
-                                                            ### pizza_types
-                                                            Contains pizza names, categories, and ingredients.
-                                                            
-                                                            | Column | Description |
-                                                            |----------|-------------|
-                                                            | pizza_type_id | Unique pizza type identifier |
-                                                            | name | Pizza name |
-                                                            | category | Pizza category |
-                                                            | ingredients | Ingredients used |
+| Column | Description |
+|----------|-------------|
+| order_id | Unique order identifier |
+| date | Order date |
+| time | Order time |
+
+### order_details
+Stores details of pizzas included in each order.
+
+| Column | Description |
+|----------|-------------|
+| order_details_id | Unique record identifier |
+| order_id | References orders table |
+| pizza_id | References pizza table |
+| quantity | Number of pizzas ordered |
+
+### pizza
+Contains pizza size and pricing information.
+
+| Column | Description |
+|----------|-------------|
+| pizza_id | Unique pizza identifier |
+| pizza_type_id | References pizza_types table |
+| size | Pizza size |
+| price | Pizza price |
+
+### pizza_types
+Contains pizza names, categories, and ingredients.
+
+| Column | Description |
+|----------|-------------|
+| pizza_type_id | Unique pizza type identifier |
+| name | Pizza name |
+| category | Pizza category |
+| ingredients | Ingredients used |
 
 ---
 
